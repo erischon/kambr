@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --first-hue: 16;
+  --sat: 17.5%;
+  --lig: 34.5%;
+  --second-hue: 196;
+
+  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  --second-color: hsl(var(--second-hue), var(--sat), var(--lig));
+}
