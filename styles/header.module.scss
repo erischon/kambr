@@ -5,13 +5,16 @@
     padding: 0 1rem;
     height: 2.5rem;
     background-color: var(--first-color);
-    color: white;
+    color: var(--white);
 
-    .logo {}
+    .logo {
+        font-weight: 800;
+    }
     .navbar {
 
         .link {
             margin-right: .5rem;
+            font-size: .8rem;
         }
     }
 }

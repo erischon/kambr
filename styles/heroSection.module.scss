@@ -1,33 +1,38 @@
 .heroContainer {
-    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("/images/bretagne-hero.jpg");
-    height: 100vh;
-    max-height: 100%;
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 1rem;
-    
-    .heroWrapper {
+  background-image: linear-gradient(
+      hsla(82, 39%, 30%, 0.3),
+      hsla(82, 39%, 30%, 0.6)
+    ),
+    url("/images/bretagne-hero.jpg");
+  height: 600px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1.5rem;
+  color: var(--white);
 
-        .heroTitle {
-            margin: 0;
+  .heroTitle {
+    margin: 0;
+  }
 
-        }
-        
-        .heroSubtitle {
-            font-size: .9rem;
-            font-weight: bold;
-            line-height: 1.35rem;
-        }
-        
-        .heroBtn {
-        
-        }
-    }
-    
+  .heroSubtitle {
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.35rem;
+  }
+
+  .heroBtn {
+    background-color: #a8c478;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    -webkit-box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.4);
+  }
 }

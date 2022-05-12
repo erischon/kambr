@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <Fragment>
       <section className={styles.heroContainer}>
-        <h1 className={styles.heroTitle}>Les Champs Bleus</h1>
+        <h1 className={styles.heroTitle}>La ferme de Kerouac</h1>
         <p className={styles.heroSubtitle}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
           enim, illo tempore vitae molestias expedita tempora fugit dolor!{" "}

@@ -16,11 +16,12 @@ a {
 }
 
 :root {
-  --first-hue: 16;
-  --sat: 17.5%;
-  --lig: 34.5%;
-  --second-hue: 196;
+  --first-hue: 82;
+  --sat: 39%;
+  --lig: 26%;
+  --second-hue: 262;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --second-color: hsl(var(--second-hue), var(--sat), var(--lig));
+  --white: hsl(0, 0%, 99%);
 }
