@@ -1,6 +1,42 @@
 .roomCardContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
+  margin: 1rem 2rem;
+  padding: 2rem;
+  -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
+
+  .roomCardImg {
+    position: relative;
+    width: auto;
+    height: 200px;
+  }
+
+  .roomCardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .roomCardTitle {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+
+    .roomCardInfo {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .roomCardButton {
+    background-color: var(--first-color);
+    border: none;
+    color: var(--white);
+    border-radius: 0.3rem;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+  }
 }
