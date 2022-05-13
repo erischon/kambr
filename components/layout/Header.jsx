@@ -9,13 +9,13 @@ const Header = () => {
       <header className={styles.headContainer}>
         <div className={styles.logo}>Kambr</div>
         <nav className={styles.navbar}>
-          <Link href="">
+          <Link href="/">
             <a className={styles.link}>Chambres</a>
           </Link>
-          <Link href="">
+          <Link href="/">
             <a className={styles.link}>Chez Nous</a>
           </Link>
-          <Link href="">
+          <Link href="/">
             <a className={styles.link}>Aux Environs</a>
           </Link>
         </nav>
