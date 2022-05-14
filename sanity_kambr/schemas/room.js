@@ -36,5 +36,11 @@ export default {
       title: "price",
       type: "number",
     },
+    {
+      name: "infos",
+      title: "Infos",
+      type: "array",
+      of: [{ type: "block" }],
+    },
   ],
 };
