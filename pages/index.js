@@ -1,14 +1,29 @@
-import { client } from "../lib/client";
-import styles from "../styles/home.module.scss";
-import Layout from "../components/layout/Layout";
-import HomePage from "../components/HomePage";
+import { Fragment } from "react";
 
-export default function Home() {
+import { client } from "../lib/client";
+import Layout from "../components/layout/Layout";
+import RoomCard from "../components/room/RoomCard";
+
+export default function Home({ rooms }) {
   return (
-    <>
+    <Fragment>
       <Layout>
-        <HomePage />
+        <h1>HomePage</h1>
+        {rooms?.map((room) => (
+          <RoomCard key={room._id} room={room} />
+        ))}
       </Layout>
-    </>
+    </Fragment>
   );
 }
+
+// Fetch data from Sanity
+// @query       all type rooms
+// @return      rooms
+export const getServerSideProps = async () => {
+  const query = '*[_type == "room"]';
+  const rooms = await client.fetch(query);
+  return {
+    props: { rooms },
+  };
+};

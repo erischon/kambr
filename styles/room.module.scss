@@ -1,9 +1,10 @@
 .roomCardContainer {
+  max-width: 400px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  margin: 1rem 2rem;
   padding: 2rem;
   border-radius: 0.4rem;
   -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);

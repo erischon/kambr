@@ -6,7 +6,7 @@ import { BsInfoSquare } from "react-icons/bs";
 import { urlFor } from "../../lib/client";
 import styles from "../../styles/room.module.scss";
 
-const RoomCard = ({ room: { image, name } }) => {
+const RoomCard = ({ room: { image, name, slug } }) => {
   return (
     <Fragment>
       <div className={styles.roomCardContainer}>
@@ -22,13 +22,15 @@ const RoomCard = ({ room: { image, name } }) => {
         </div>
         <div className={styles.roomCardBottom}>
           <h2 className={styles.roomCardTitle}>{name}</h2>
-          <Link href="/">
+          <Link href={`/room/${slug.current}`}>
             <a className={styles.roomCardInfo}>
               <BsInfoSquare />
             </a>
           </Link>
         </div>
-        <button className={styles.roomCardButton}>Réserver</button>
+        <Link href={`/room/${slug.current}`}>
+          <button className={styles.roomCardButton}>Réserver</button>
+        </Link>
       </div>
     </Fragment>
   );
