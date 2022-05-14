@@ -42,3 +42,22 @@
     cursor: pointer;
   }
 }
+
+.roomDetailContainer {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.4);
+
+  .roomDetailImg {
+    position: relative;
+    width: auto;
+    height: 200px;
+  }
+}
