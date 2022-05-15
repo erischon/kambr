@@ -10,8 +10,8 @@ const RoomDetail = ({ room }) => {
 
   return (
     <Fragment>
-      <div className={styles.detailContainer}>
-        <div className={styles.detailContainer__image}>
+      <div className={styles["detail-container"]}>
+        <div className={styles["detail-container__image"]}>
           <Image
             src={urlFor(image && image[0]).url()}
             layout="fill"
