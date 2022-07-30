@@ -1,12 +1,12 @@
 import nc from "next-connect";
-import { getAllRooms } from "../../../controllers/room.controller";
-import connectDB from "../../../config/dbConnect";
+import { getAllRooms, newRoom } from "../../../controllers/room.controller";
+import dbConnect from "../../../config/dbConnect";
 
 const handler = nc();
 
 handler.get(getAllRooms);
+handler.post(newRoom);
 
-const db = connectDB();
-console.log(db);
+dbConnect();
 
 export default handler;
