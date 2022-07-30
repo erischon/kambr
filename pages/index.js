@@ -20,6 +20,10 @@ export default function Home({ rooms }) {
 // Fetch data from Sanity
 // @query       all type rooms
 // @return      rooms
+/**
+ *
+ * @returns
+ */
 export const getServerSideProps = async () => {
   const query = '*[_type == "room"]';
   const rooms = await client.fetch(query);
