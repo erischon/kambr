@@ -17,10 +17,6 @@ const roomSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter room description"],
   },
-  address: {
-    type: String,
-    required: [true, "Please enter room address"],
-  },
   guestCapacity: {
     type: Number,
     required: [true, "Please enter room guest capacity"],
@@ -28,26 +24,6 @@ const roomSchema = new mongoose.Schema({
   numOfBeds: {
     type: Number,
     required: [true, "Please enter number of beds in room"],
-  },
-  internet: {
-    type: Boolean,
-    default: false,
-  },
-  breakfast: {
-    type: Boolean,
-    default: false,
-  },
-  airConditioned: {
-    type: Boolean,
-    default: false,
-  },
-  petsAllowed: {
-    type: Boolean,
-    default: false,
-  },
-  roomCleaning: {
-    type: Boolean,
-    default: false,
   },
   ratings: {
     type: Number,
@@ -69,14 +45,6 @@ const roomSchema = new mongoose.Schema({
       },
     },
   ],
-  category: {
-    type: String,
-    required: [true, "Please enter room category"],
-    enum: {
-      values: ["King", "Single", "Twins"],
-      message: "Please select correct category for room",
-    },
-  },
   reviews: [
     {
       user: {
