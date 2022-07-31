@@ -8,9 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest --run --reporter verbose",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "seeder": "node utils/seeder"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "mongoose": "^6.5.0",
     "next": "12.2.3",
     "next-connect": "^0.13.0",
