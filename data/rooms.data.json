@@ -1,0 +1,56 @@
+[
+    {
+      "name": "La chambre libellule bleue",
+      "pricePerNight": 35,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+      "guestCapacity": 2,
+      "numOfBeds": 1,
+      "ratings": 1,
+      "images": [
+        {
+          "public_id": "bookit/rooms/1_bzynlv",
+          "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
+        },
+        {
+          "public_id": "bookit/rooms/2_s1u52n",
+          "url": "https://res.cloudinary.com/bookit/image/upload/v1618590761/bookit/rooms/2_s1u52n.jpg"
+        }
+      ]
+    },
+    {
+        "name": "La chambre dorade",
+        "pricePerNight": 35,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+        "guestCapacity": 2,
+        "numOfBeds": 1,
+        "ratings": 1,
+        "images": [
+          {
+            "public_id": "bookit/rooms/1_bzynlv",
+            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
+          },
+          {
+            "public_id": "bookit/rooms/2_s1u52n",
+            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590761/bookit/rooms/2_s1u52n.jpg"
+          }
+        ]
+      },
+      {
+        "name": "La chambre mouette",
+        "pricePerNight": 35,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+        "guestCapacity": 2,
+        "numOfBeds": 1,
+        "ratings": 1,
+        "images": [
+          {
+            "public_id": "bookit/rooms/1_bzynlv",
+            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
+          },
+          {
+            "public_id": "bookit/rooms/2_s1u52n",
+            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590761/bookit/rooms/2_s1u52n.jpg"
+          }
+        ]
+      }
+  ]
