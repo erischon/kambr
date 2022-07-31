@@ -6,6 +6,7 @@ const roomSchema = new mongoose.Schema({
     required: [true, "Please enter room name"],
     trim: true,
     maxLength: [100, "Room name cannot exceed 100 characters"],
+    unique: [true, "Room name must be unique"],
   },
   pricePerNight: {
     type: Number,
