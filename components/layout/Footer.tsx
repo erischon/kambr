@@ -1,0 +1,13 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="text-sm">
+      <p className="">
+        Kambr - &copy; 2022-{new Date().getFullYear()}, All Rights Reserved
+      </p>
+    </footer>
+  );
+};
+
+export default Footer;
