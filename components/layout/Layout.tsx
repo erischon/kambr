@@ -19,7 +19,7 @@ const Layout = ({
         <meta name="viewport" content="initial-sacle=1.0, width=device-width" />
       </Head>
 
-      <div className=" flex flex-col min-h-screen max-w-screen-lg mx-auto">
+      <div className=" flex flex-col min-h-screen mx-auto max-w-screen-lg">
         <Header />
         {children}
         <Footer />

@@ -18,6 +18,7 @@ const Header = () => {
           <a className="font-bold">Kambr</a>
         </Link>
       </div>
+
       <nav className="text-sm font-semibold">
         <ul className="flex">
           <li className="mr-2">
