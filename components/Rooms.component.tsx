@@ -2,7 +2,7 @@ import RoomCard from "./RoomCard.component";
 
 const Rooms = () => {
   return (
-    <section className="flex flex-col lg:flex-row lg:justify-evenly lg:flex-wrap items-center my-8 mx-4 lg:gap-4">
+    <section className="flex flex-col sm:flex-row sm:justify-evenly sm:flex-wrap items-center my-8 mx-4 sm:gap-4">
       <RoomCard />
       <RoomCard />
       <RoomCard />
