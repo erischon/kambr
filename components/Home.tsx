@@ -5,11 +5,11 @@ import Rooms from "./Rooms.component";
 import Facilities from "./Facilities.component";
 import Around from "./Around.component";
 
-const Home = () => {
+const Home = ({ rooms }: any) => {
   return (
     <main className="flex-[6]">
       <Hero />
-      <Rooms />
+      <Rooms rooms={rooms} />
       <Facilities />
       <Around />
     </main>
