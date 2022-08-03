@@ -4,11 +4,14 @@ import absoluteUrl from "next-absolute-url";
 import HomePage from "../components/Home";
 import Layout from "../components/layout/Layout";
 
-export default function Home({ rooms }: any) {
+export default function Home({ roomsData, servicesData }: any) {
+  const { rooms } = roomsData;
+  const { services } = servicesData;
+
   return (
     <>
       <Layout title="Kambr">
-        <HomePage rooms={rooms} />
+        <HomePage rooms={rooms} services={services} />
       </Layout>
     </>
   );
@@ -16,10 +19,12 @@ export default function Home({ rooms }: any) {
 
 export const getServerSideProps = async ({ req }: any) => {
   const { origin } = absoluteUrl(req);
-  const link = `${origin}/api/rooms`;
 
-  // const ALLROOMS = "http://localhost:3000/api/rooms";
-  const { data } = await axios.get(link);
+  const roomsEndpoint = `${origin}/api/rooms`;
+  const servicesEndpoint = `${origin}/api/services`;
 
-  return { props: data };
+  const rooms = await axios.get(roomsEndpoint);
+  const services = await axios.get(servicesEndpoint);
+
+  return { props: { roomsData: rooms.data, servicesData: services.data } };
 };

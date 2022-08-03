@@ -1,0 +1,37 @@
+[
+    {
+      "name": "Wifi",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+      "category": "Service",
+      "option": false,
+      "optionPricing": 0
+    },
+    {
+      "name": "Télévision",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+      "category": "Intérieur",
+      "option": false,
+      "optionPricing": 5
+    },
+    {
+      "name": "Parking",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil",
+      "category": "Extérieur",
+      "option": false,
+      "optionPricing": 5
+    },
+    {
+      "name": "Linge de maison",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+      "category": "Intérieur",
+      "option": false,
+      "optionPricing": 0
+    },
+    {
+      "name": "Linge de toilette",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "category": "Intérieur",
+      "option": true,
+      "optionPricing": 5
+    }
+  ]

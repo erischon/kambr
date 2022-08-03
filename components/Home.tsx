@@ -7,12 +7,12 @@ import Around from "./Around.component";
 import Location from "./Location.component";
 import Contact from "./Contact.component";
 
-const Home = ({ rooms }: any) => {
+const Home = ({ rooms, services }: any) => {
   return (
     <main className="flex-[6]">
       <Hero />
       <Rooms rooms={rooms} />
-      <Facilities />
+      <Facilities services={services} />
       <Around />
     </main>
   );
