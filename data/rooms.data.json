@@ -8,8 +8,8 @@
       "ratings": 1,
       "images": [
         {
-          "public_id": "bookit/rooms/1_bzynlv",
-          "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
+          "public_id": "kambr/rooms/bedroom-1_susk7d",
+          "url": "https://res.cloudinary.com/dxyabkggp/image/upload/v1659511181/kambr/rooms/bedroom-1_susk7d.jpg"
         },
         {
           "public_id": "bookit/rooms/2_s1u52n",
@@ -18,39 +18,31 @@
       ]
     },
     {
-        "name": "La chambre dorade",
-        "pricePerNight": 35,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
-        "guestCapacity": 2,
-        "numOfBeds": 1,
-        "ratings": 1,
-        "images": [
-          {
-            "public_id": "bookit/rooms/1_bzynlv",
-            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
-          },
-          {
-            "public_id": "bookit/rooms/2_s1u52n",
-            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590761/bookit/rooms/2_s1u52n.jpg"
-          }
-        ]
-      },
-      {
-        "name": "La chambre mouette",
-        "pricePerNight": 35,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
-        "guestCapacity": 2,
-        "numOfBeds": 1,
-        "ratings": 1,
-        "images": [
-          {
-            "public_id": "bookit/rooms/1_bzynlv",
-            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590762/bookit/rooms/1_bzynlv.jpg"
-          },
-          {
-            "public_id": "bookit/rooms/2_s1u52n",
-            "url": "https://res.cloudinary.com/bookit/image/upload/v1618590761/bookit/rooms/2_s1u52n.jpg"
-          }
-        ]
-      }
+      "name": "La chambre dorade",
+      "pricePerNight": 45,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+      "guestCapacity": 2,
+      "numOfBeds": 1,
+      "ratings": 1,
+      "images": [
+        {
+          "public_id": "kambr/rooms/bedroom-3_ohsnze",
+          "url": "https://res.cloudinary.com/dxyabkggp/image/upload/v1659511181/kambr/rooms/bedroom-3_ohsnze.jpg"
+        }
+      ]
+    },
+    {
+      "name": "La chambre mouette",
+      "pricePerNight": 30,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima at harum deleniti accusantium unde nihil, provident excepturi alias doloremque temporibus eveniet modi esse minus asperiores nobis, facilis tempore ullam reprehenderit?",
+      "guestCapacity": 2,
+      "numOfBeds": 1,
+      "ratings": 1,
+      "images": [
+        {
+          "public_id": "kambr/rooms/bedroom-2_admuis",
+          "url": "https://res.cloudinary.com/dxyabkggp/image/upload/v1659511181/kambr/rooms/bedroom-2_admuis.jpg"
+        }
+      ]
+    }
   ]
