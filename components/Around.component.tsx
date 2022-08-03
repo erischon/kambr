@@ -1,6 +1,3 @@
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-
 import AroundCard from "./AroundCard.component";
 import More from "./More.component";
 
