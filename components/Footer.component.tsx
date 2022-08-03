@@ -1,5 +1,5 @@
 import Contact from "./Contact.component";
-import Location from "./LOcation.component";
+import Location from "./Location.component";
 
 const FooterItems = () => {
   return (
