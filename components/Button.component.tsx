@@ -1,4 +1,4 @@
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Button = (props: any) => {
   let buttonClass =
@@ -15,7 +15,7 @@ const Button = (props: any) => {
     <div className={buttonClass}>
       <span className="">{props.text}</span>
       <span className={iconClass}>
-        <HiOutlineArrowNarrowRight />
+        <MdOutlineKeyboardArrowRight />
       </span>
     </div>
   );
