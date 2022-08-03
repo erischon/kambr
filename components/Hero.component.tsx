@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./Button.component";
 
 const Hero = () => {
   const styles = {
@@ -19,12 +20,8 @@ const Hero = () => {
             accusantium omnis dolorum nihil illo. Ad ipsam at minima
             molestiasexpedita. Laborum, magni?
           </p>
-          <a
-            href="#"
-            className="inline-flex items-center justify-center px-7 py-3 text-lg font-semibold text-center  rounded-lg bg-amber-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
-          >
-            Réserver
-          </a>
+
+          <Button text="Réservez votre séjour" size="lg" />
         </div>
 
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex"></div>
