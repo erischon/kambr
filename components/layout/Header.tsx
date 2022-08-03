@@ -22,19 +22,13 @@ const Header = () => {
       <nav className="text-sm font-semibold">
         <ul className="flex">
           <li className="mr-2">
-            <Link href="/">Accueil</Link>
+            <Link href="/#chambres">Nos Chambres</Link>
           </li>
           <li className="mr-2">
-            <Link href="/">Prestations</Link>
+            <Link href="/#services">Prestations</Link>
           </li>
           <li className="mr-2">
-            <Link href="/">Autour</Link>
-          </li>
-          <li className="mr-2">
-            <Link href="/">Trajet</Link>
-          </li>
-          <li className="mr-2">
-            <Link href="/">Réserver</Link>
+            <Link href="/#environs">Environs</Link>
           </li>
         </ul>
       </nav>
