@@ -12,7 +12,7 @@ const Around = () => {
         <AroundCard />
       </div>
 
-      <More text="Autres lieux dans les environs" />
+      <More text="Autres lieux dans les environs" url="#" />
     </section>
   );
 };

@@ -21,7 +21,7 @@ const Hero = () => {
             molestiasexpedita. Laborum, magni?
           </p>
 
-          <Button text="Réservez votre séjour" size="lg" />
+          <Button text="Réservez votre séjour" size="lg" url="#chambres" />
         </div>
 
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex"></div>

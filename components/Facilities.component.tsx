@@ -12,7 +12,7 @@ const Facilities = () => {
         <FacilityCard />
       </div>
 
-      <More text="Tous les services" />
+      <More text="Tous les services" url="#" />
     </section>
   );
 };

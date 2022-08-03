@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Button = (props: any) => {
@@ -11,9 +13,13 @@ const Button = (props: any) => {
     iconClass = "text-2xl pt-1";
   }
 
+  const url = `/${props.url}`;
+
   return (
     <div className={buttonClass}>
-      <span className="">{props.text}</span>
+      <Link href={url}>
+        <a className="">{props.text}</a>
+      </Link>
       <span className={iconClass}>
         <MdOutlineKeyboardArrowRight />
       </span>
