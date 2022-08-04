@@ -4,15 +4,15 @@ import absoluteUrl from "next-absolute-url";
 import HomePage from "../components/Home";
 import Layout from "../components/layout/Layout";
 
-export default function Home({ roomsData, servicesData }: any) {
+export default function Home({ roomsData, servicesData, placesData }: any) {
   const { rooms } = roomsData;
   const { services } = servicesData;
-  console.log("=====services=========", services);
+  const { places } = placesData;
 
   return (
     <>
       <Layout title="Kambr">
-        <HomePage rooms={rooms} services={services} />
+        <HomePage rooms={rooms} services={services} places={places} />
       </Layout>
     </>
   );
@@ -23,9 +23,17 @@ export const getServerSideProps = async ({ req }: any) => {
 
   const roomsEndpoint = `${origin}/api/rooms`;
   const servicesEndpoint = `${origin}/api/services`;
+  const placesEndpoint = `${origin}/api/places`;
 
   const rooms = await axios.get(roomsEndpoint);
   const services = await axios.get(servicesEndpoint);
+  const places = await axios.get(placesEndpoint);
 
-  return { props: { roomsData: rooms.data, servicesData: services.data } };
+  return {
+    props: {
+      roomsData: rooms.data,
+      servicesData: services.data,
+      placesData: places.data,
+    },
+  };
 };

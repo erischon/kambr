@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FacilityCard from "./FacilityCard.component";
+import ServiceCard from "./ServiceCard.component";
 import More from "./More.component";
 
 interface service {
@@ -16,7 +16,7 @@ const Facilities = ({ services }: any) => {
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 my-8">
         {services.map((service: any, i: number) =>
-          !service.option ? <FacilityCard key={i} service={service} /> : null
+          !service.option ? <ServiceCard key={i} service={service} /> : null
         )}
       </div>
 

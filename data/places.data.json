@@ -1,7 +1,7 @@
  [
     {
       "title": "Abbaye du Mont Saint Michel",
-      "description": "lorem",
+      "description": "L’abbaye du Mont-Saint-Michel est une abbaye, anciennement bénédictine et désormais confiée aux Fraternités monastiques de Jérusalem. ",
       "imageUrl":
         "https://images.unsplash.com/photo-1612829681252-1ce85bba55c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=860&q=80",
       "address": "Abbaye, 50170 le Mont Saint Michel",
@@ -11,25 +11,25 @@
       }
     },
     {
-        "title": "Oratoire de Saint-Guirec",
-        "description": "lorem",
+        "title": "Dinard",
+        "description": "C'est une station balnéaire réputée, particulièrement auprès des Britanniques et des Américains, pour ses villas Belle Époque et le Festival du film britannique qui s'y tient chaque année depuis les années 1990.",
         "imageUrl":
-            "http://docarmor.free.fr/valarmor/armimage/stguire3.jpg",
-        "address": "13 Rue de l'Oratoire, 22700 Perros-Guirec",
+            "https://images.unsplash.com/photo-1583325953895-7b6fc84ed314?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+        "address": "47 Bd Féart, 35800 Dinard",
         "location": {
-            "lat": 48.832743407300555, 
-            "lng": -3.4871441972140786
+            "lat": 48.631782654940224,  
+            "lng": -2.0549472182212227
     }
     },
     {
-        "title": "Rocher 'Castel Braz'",
-        "description": "lorem",
+        "title": "Saint-Malo Intra-Muros",
+        "description": "Saint-Malo est une commune française située en Bretagne, dans le département d'Ille-et-Vilaine, et le principal port de la côte nord de Bretagne. Le secteur touristique y est également très développé.",
         "imageUrl":
-            "https://www.infos.fr/wp-content/uploads/2021/08/1260-990x533-1-1-678x381.jpg",
-        "address": "Perros-Guirec",
+            "https://images.unsplash.com/flagged/photo-1583442850665-83846558fe28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+        "address": "3 Rue Thevenard, 35540 Saint-Malo",
         "location": {
-            "lat": 48.83212371595707, 
-            "lng": -3.490191811086645
+            "lat": 48.64911396117244, 
+            "lng": -2.0267813740445266
         }
     }
   ]

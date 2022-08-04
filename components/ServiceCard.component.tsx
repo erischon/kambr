@@ -4,7 +4,7 @@ import { FiCheckCircle } from "react-icons/fi";
 
 const FacilityCard = ({ service }: any) => {
   return (
-    <article className="grid grid-cols-8 shadow-md ">
+    <article className="grid grid-cols-8 shadow-sm bg-orange-100 rounded-md">
       <div className="col-span-1 flex items-center justify-center font-semibold text-green-600">
         <FiCheckCircle />
       </div>
