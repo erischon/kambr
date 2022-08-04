@@ -9,41 +9,40 @@ const services = require("../data/services.data");
 
 mongoose.connect(process.env.MONGO_URI);
 
-const seedRooms = () => {
+const seedRooms = async () => {
   try {
-    Room.deleteMany();
+    await Room.deleteMany();
     console.log("Rooms are deleted");
 
-    Room.insertMany(rooms);
+    await Room.insertMany(rooms);
     console.log("All rooms are added");
 
-    return true;
+    process.exit();
   } catch (error) {
-    return console.log(error.message);
-  }
-};
+    console.log(error.message);
 
-const seedServices = () => {
-  try {
-    Service.deleteMany();
-    console.log("Services are deleted");
-
-    Service.insertMany(services);
-    console.log("All services are added");
-
-    return true;
-  } catch (error) {
-    return console.log(error.message);
-  }
-};
-
-const seed = () => {
-  const seedRoomsStatus = seedRooms();
-  const seedServicesStatus = seedServices();
-
-  if (seedRoomsStatus && seedServicesStatus) {
     process.exit();
   }
 };
 
-seed();
+const seedServices = async () => {
+  try {
+    await Service.deleteMany();
+    console.log("Services are deleted");
+
+    await Service.insertMany(services);
+    console.log("All services are added");
+
+    process.exit();
+  } catch (error) {
+    console.log(error.message);
+
+    process.exit();
+  }
+};
+
+if (process.argv[2] === "-R" || process.argv[2] === "--rooms") {
+  seedRooms();
+} else if (process.argv[2] === "-S" || process.argv[2] === "--services") {
+  seedServices();
+} else process.exit();
