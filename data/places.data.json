@@ -1,0 +1,35 @@
+ [
+    {
+      "title": "Abbaye du Mont Saint Michel",
+      "description": "lorem",
+      "imageUrl":
+        "https://images.unsplash.com/photo-1612829681252-1ce85bba55c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=860&q=80",
+      "address": "Abbaye, 50170 le Mont Saint Michel",
+      "location": {
+        "lat": 48.636002,
+        "lng": -1.511400
+      }
+    },
+    {
+        "title": "Oratoire de Saint-Guirec",
+        "description": "lorem",
+        "imageUrl":
+            "http://docarmor.free.fr/valarmor/armimage/stguire3.jpg",
+        "address": "13 Rue de l'Oratoire, 22700 Perros-Guirec",
+        "location": {
+            "lat": 48.832743407300555, 
+            "lng": -3.4871441972140786
+    }
+    },
+    {
+        "title": "Rocher 'Castel Braz'",
+        "description": "lorem",
+        "imageUrl":
+            "https://www.infos.fr/wp-content/uploads/2021/08/1260-990x533-1-1-678x381.jpg",
+        "address": "Perros-Guirec",
+        "location": {
+            "lat": 48.83212371595707, 
+            "lng": -3.490191811086645
+        }
+    }
+  ]

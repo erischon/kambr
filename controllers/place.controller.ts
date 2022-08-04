@@ -2,22 +2,22 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 import { catchAsyncErrors } from "../middlewares/catchAsyncErrors";
 import ErrorHandler from "../utils/errorHandler";
-import Room from "../models/room";
+import Place from "../models/place";
 
 /**
- * Get all the rooms
- * @route GET /api/rooms
+ * Get all the Places
+ * @route GET /api/places
  * @access public
  */
-const getAllRooms = catchAsyncErrors(
+const getAllPlaces = catchAsyncErrors(
   async (req: NextApiRequest, res: NextApiResponse) => {
     try {
-      const rooms = await Room.find();
+      const places = await Place.find();
 
       res.status(200).json({
         success: true,
-        count: rooms.length,
-        rooms,
+        count: places.length,
+        places,
       });
     } catch (err) {
       res.status(400).json({
@@ -29,20 +29,18 @@ const getAllRooms = catchAsyncErrors(
 );
 
 /**
- * Create a new room
+ * Create a new Place
+ * @route POST /api/places
  * @access public
- * @route POST /api/rooms
- * @param {NextApiRequest} req
- * @param {NextApiResponse} res
  */
-const newRoom = catchAsyncErrors(
+const newPlace = catchAsyncErrors(
   async (req: NextApiRequest, res: NextApiResponse) => {
     try {
-      const room = await Room.create(req.body);
+      const place = await Place.create(req.body);
 
       res.status(200).json({
         success: true,
-        room,
+        place,
       });
     } catch (err) {
       res.status(400).json({
@@ -54,24 +52,22 @@ const newRoom = catchAsyncErrors(
 );
 
 /**
- * Get room detail
+ * Get Place detail
+ * @route POST /api/Places/:id
  * @access public
- * @route POST /api/rooms/:id
- * @param {NextApiRequest} req
- * @param {NextApiResponse} res
  */
-const getSingleRoom = catchAsyncErrors(
+const getSinglePlace = catchAsyncErrors(
   async (req: NextApiRequest, res: NextApiResponse, next: Function) => {
     try {
-      const room = await Room.findById(req.query.id);
+      const place = await Place.findById(req.query.id);
 
-      if (!room) {
-        return next(new ErrorHandler("Room not found with this id", 404));
+      if (!place) {
+        return next(new ErrorHandler("Place not found with this id", 404));
       }
 
       res.status(200).json({
         success: true,
-        room,
+        Place,
       });
     } catch (err) {
       res.status(400).json({
@@ -83,22 +79,20 @@ const getSingleRoom = catchAsyncErrors(
 );
 
 /**
- * Update room detail
+ * Update Place detail
+ * @route PUT /api/places/:id
  * @access private
- * @route PUT /api/rooms/:id
- * @param {NextApiRequest} req
- * @param {NextApiResponse} res
  */
-const updateRoom = catchAsyncErrors(
+const updatePlace = catchAsyncErrors(
   async (req: NextApiRequest, res: NextApiResponse, next: Function) => {
     try {
-      let room = await Room.findById(req.query.id);
+      let place = await Place.findById(req.query.id);
 
-      if (!room) {
-        return next(new ErrorHandler("Room not found with this id", 404));
+      if (!place) {
+        return next(new ErrorHandler("Place not found with this id", 404));
       }
 
-      room = await Room.findByIdAndUpdate(req.query.id, req.body, {
+      place = await Place.findByIdAndUpdate(req.query.id, req.body, {
         new: true,
         runValidators: true,
         useFindAndModify: false,
@@ -106,7 +100,7 @@ const updateRoom = catchAsyncErrors(
 
       res.status(200).json({
         success: true,
-        room,
+        Place,
       });
     } catch (err) {
       res.status(400).json({
@@ -118,26 +112,24 @@ const updateRoom = catchAsyncErrors(
 );
 
 /**
- * Delete room
+ * Delete Place
+ * @route DELETE /api/Places/:id
  * @access private
- * @route DELETE /api/rooms/:id
- * @param {NextApiRequest} req
- * @param {NextApiResponse} res
  */
-const deleteRoom = catchAsyncErrors(
+const deletePlace = catchAsyncErrors(
   async (req: NextApiRequest, res: NextApiResponse, next: Function) => {
     try {
-      const room = await Room.findById(req.query.id);
+      const place = await Place.findById(req.query.id);
 
-      if (!room) {
-        return next(new ErrorHandler("Room not found with this id", 404));
+      if (!place) {
+        return next(new ErrorHandler("Place not found with this id", 404));
       }
 
-      await room.remove();
+      await Place.remove();
 
       res.status(200).json({
         success: true,
-        message: "Room is deleted.",
+        message: "Place is deleted.",
       });
     } catch (err) {
       res.status(400).json({
@@ -148,4 +140,4 @@ const deleteRoom = catchAsyncErrors(
   }
 );
 
-export { getAllRooms, newRoom, getSingleRoom, updateRoom, deleteRoom };
+export { getAllPlaces, newPlace, getSinglePlace, updatePlace, deletePlace };
