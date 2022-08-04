@@ -8,7 +8,7 @@ const More = (props: any) => {
   return (
     <div className="flex justify-between items-center w-fit gap-2 mt-8">
       <Link href={url}>
-        <a className="cursor-pointer">{props.text}</a>
+        <a className="cursor-pointer text-sm">{props.text}</a>
       </Link>
       <span className="text-xl pt-1">
         <HiOutlineArrowNarrowRight />

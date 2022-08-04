@@ -28,5 +28,11 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       "option": true,
       "optionPricing": 5
+    },
+    {
+      "name": "Barbecue",
+      "description": "Lorem ipsum dolor sit amet",
+      "option": false,
+      "optionPricing": 0
     }
   ]
