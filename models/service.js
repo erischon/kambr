@@ -12,11 +12,6 @@ const serviceSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter room description"],
   },
-  category: {
-    type: String,
-    enum: ["Intérieur", "Extérieur", "Service"],
-    required: [true, "Please enter Service category"],
-  },
   option: {
     type: Boolean,
     default: false,

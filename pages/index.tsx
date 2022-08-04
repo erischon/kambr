@@ -7,6 +7,7 @@ import Layout from "../components/layout/Layout";
 export default function Home({ roomsData, servicesData }: any) {
   const { rooms } = roomsData;
   const { services } = servicesData;
+  console.log("=====services=========", services);
 
   return (
     <>
