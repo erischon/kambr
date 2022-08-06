@@ -3,7 +3,7 @@ import Location from "./Location.component";
 
 const FooterItems = () => {
   return (
-    <div className="grid md:grid-cols-12 my-8 gap-2">
+    <div className="grid md:grid-cols-12 mt-8 mb-2 gap-2">
       <div className="md:col-span-2 bg-gray-700 p-4 rounded-md text-xs">
         <ul className="flex gap-4 justify-between sm:justify-around md:flex-col flex-wrap">
           <li>A propos</li>
