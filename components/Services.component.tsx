@@ -11,8 +11,14 @@ interface service {
 
 const Facilities = ({ services }: any) => {
   return (
-    <section className="my-8 mx-4" id="services">
-      <h2 className="text-2xl font-bold">Les services comme à la maison</h2>
+    <section className="my-12 mx-4" id="services">
+      <div className="flex flex-col gap-2 sm:w-2/3 before:content[''] before:bg-orange-400 before:w-[200px] before:h-[3px]">
+        <h2 className="text-2xl font-bold">Aux petits soins</h2>
+        <p className="text-sm">
+          Pour que vous soyez le mieux possible chez nous le temps de votre
+          séjour nous vous proposons différentes commoditées.
+        </p>
+      </div>
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 my-8">
         {services.map((service: any, i: number) =>
