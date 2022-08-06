@@ -3,7 +3,7 @@ import FooterItems from "../Footer.component";
 
 const Footer = () => {
   return (
-    <footer className="text-sm bg-slate-800 text-white px-8 pb-4">
+    <footer className="text-sm bg-slate-800 text-white px-8 pb-4 lg:rounded-tr-lg lg:rounded-tl-lg">
       <FooterItems />
 
       <p className="text-xs text-right">
