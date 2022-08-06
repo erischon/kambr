@@ -9,9 +9,16 @@ export default function Home({ roomsData, servicesData, placesData }: any) {
   const { services } = servicesData;
   const { places } = placesData;
 
+  const seoData = {
+    description: "Application Web pour Chambre d'hôtes",
+    title: "Kambr",
+    url: "https://kambr.vercel.app/",
+    twitterUsername: "",
+  };
+
   return (
     <>
-      <Layout title="Kambr">
+      <Layout title="Kambr" seoData={seoData}>
         <HomePage rooms={rooms} services={services} places={places} />
       </Layout>
     </>
