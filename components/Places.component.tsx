@@ -20,7 +20,7 @@ const Around = ({ places }: any) => {
         ))}
       </div>
 
-      <More text="Autres lieux dans les environs" url="#environs" />
+      <More text="Autres lieux dans les environs" url="soon" />
     </section>
   );
 };

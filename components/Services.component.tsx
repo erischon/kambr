@@ -28,7 +28,7 @@ const Facilities = ({ services }: any) => {
         )}
       </div>
 
-      <More text="Tous les services en détail" url="#services" />
+      <More text="Tous les services en détail" url="soon" />
     </section>
   );
 };

@@ -30,7 +30,7 @@ const RoomCard = ({ room }: any) => {
           </div>
         </div>
 
-        <Button text="Réserver" url="#chambres" />
+        <Button text="Réserver" url="soon" />
       </div>
     </article>
   );

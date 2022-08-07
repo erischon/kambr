@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Contact from "./Contact.component";
 import Location from "./Location.component";
 
@@ -6,9 +7,15 @@ const FooterItems = () => {
     <div className="grid md:grid-cols-12 mt-8 mb-2 gap-2">
       <div className="md:col-span-3 bg-gray-700 p-4 rounded-md text-xs">
         <ul className="flex gap-2 justify-between sm:justify-around md:flex-col flex-wrap">
-          <li>A propos</li>
-          <li>Mentions légales</li>
-          <li>CGV</li>
+          <li>
+            <Link href="/soon">A propos</Link>
+          </li>
+          <li>
+            <Link href="/soon">Mentions légales</Link>
+          </li>
+          <li>
+            <Link href="/soon">CGV</Link>
+          </li>
         </ul>
       </div>
 
