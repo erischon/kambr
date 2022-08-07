@@ -12,8 +12,10 @@ interface service {
 const Facilities = ({ services }: any) => {
   return (
     <section className="my-12 mx-4" id="services">
-      <div className="flex flex-col gap-2 sm:w-2/3 before:content[''] before:bg-orange-400 before:w-[200px] before:h-[3px]">
-        <h2 className="text-2xl font-bold">Aux petits soins</h2>
+      <div className="flex flex-col gap-2 sm:w-2/3 ">
+        <h2 className="text-2xl font-bold relative after:content[''] after:bg-orange-400 after:w-[50px] after:h-[3px] after:absolute after:bottom-3 after:right-[-60px] w-fit">
+          Aux petits soins
+        </h2>
         <p className="text-sm">
           Pour que vous soyez le mieux possible chez nous le temps de votre
           séjour nous vous proposons différentes commoditées.
