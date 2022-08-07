@@ -1,10 +1,9 @@
-import axios from "axios";
-import absoluteUrl from "next-absolute-url";
-
 import HomePage from "../components/Home";
 import Layout from "../components/layout/Layout";
 
-export default function Home({ roomsData, servicesData, placesData }: any) {
+import { getRooms, getServices, getPlaces } from "../lib/homeFetch.lib";
+
+export default function Home({ servicesData, placesData, roomsData }: any) {
   const { rooms } = roomsData;
   const { services } = servicesData;
   const { places } = placesData;
@@ -13,7 +12,7 @@ export default function Home({ roomsData, servicesData, placesData }: any) {
     description: "Application Web pour Chambre d'hôtes",
     title: "Kambr",
     url: "https://kambr.vercel.app/",
-    twitterUsername: "",
+    twitterUsername: "@EriSchon",
   };
 
   return (
@@ -25,16 +24,10 @@ export default function Home({ roomsData, servicesData, placesData }: any) {
   );
 }
 
-export const getServerSideProps = async ({ req }: any) => {
-  const { origin } = absoluteUrl(req);
-
-  const roomsEndpoint = `${origin}/api/rooms`;
-  const servicesEndpoint = `${origin}/api/services`;
-  const placesEndpoint = `${origin}/api/places`;
-
-  const rooms = await axios.get(roomsEndpoint);
-  const services = await axios.get(servicesEndpoint);
-  const places = await axios.get(placesEndpoint);
+export const getStaticProps = async ({ req }: any) => {
+  const rooms = await getRooms();
+  const services = await getServices();
+  const places = await getPlaces();
 
   return {
     props: {
