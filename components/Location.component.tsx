@@ -14,14 +14,16 @@ const Location = () => {
   const key = process.env.NEXT_PUBLIC_GAPI_KEY || "";
 
   return (
-    <div className="">
+    <div className="ml-2">
       <p className="font-semibold text-sm mb-2">
         <span className="text-xs font-normal">Au</span> 2 Ham. de Ty Guip, 29120
         Tréméoc
       </p>
 
       <Wrapper apiKey={key} render={render}>
-        <Map center={center} zoom={zoom} style={style} />
+        <div className="shadow-md">
+          <Map center={center} zoom={zoom} style={style} />
+        </div>
       </Wrapper>
     </div>
   );

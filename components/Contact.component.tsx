@@ -6,7 +6,7 @@ import { FaBeer } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex justify-between sm:justify-around gap-2 md:flex-col flex-wrap">
+    <div className="flex justify-between sm:justify-around gap-2 md:flex-col flex-wrap ml-2">
       <p className="flex items-center gap-1">
         <BsFillTelephoneFill />: 06-34-54-73-23
       </p>
