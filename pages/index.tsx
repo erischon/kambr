@@ -9,7 +9,7 @@ export default function Home({ servicesData, placesData, roomsData }: any) {
   const { places } = placesData;
 
   const seoData = {
-    description: "Application Web pour Chambre d'hôtes",
+    description: "Application Web pour Propriétaires de Chambres d'hôtes",
     title: "Kambr",
     url: "https://kambr.vercel.app/",
     twitterUsername: "@EriSchon",
